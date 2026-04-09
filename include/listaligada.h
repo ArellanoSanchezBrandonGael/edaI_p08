@@ -19,6 +19,11 @@ bool lista_insertar_inicio(DLista *l, void *info, size_t size);
 bool lista_insertar_fin(DLista *l, void *info, size_t size);
 bool lista_insertar_x_pos(DLista *l,int pos, void *info, size_t size);
 
+int lista_num_nodos(DLista *l){
+    int i=0
+    for(Nodo *tmp = l->head; tmp !=NULL; tmp = tmp-<sig, i++);
+    return i;
+}
 void lista_eliminar_inicio()
 void lista_eliminar_fin()
 void lista_eliminar_x_pos()
