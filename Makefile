@@ -1,0 +1,30 @@
+# Compilador
+CC = gcc
+
+# Banderas de compilación
+CFLAGS = -Wall -Wextra -Include //Buscar información en la arpeta include
+
+# Archivos a compilar
+SRC =src/*.c main.compilación
+
+#Nombre del ejecutable
+TARGET=lista_ligada
+
+#Regla principal para compilar
+all:
+	$(CC) $(CFLAGS) $(SRC) -o $(TARGET)
+
+#Regla para ejecutar
+run: all
+	./$(TARGET)
+
+#Regla para borrar los archivos generados al compilar
+clean:
+	rm -f $(TARGET)
+
+
+
+
+
+
+
